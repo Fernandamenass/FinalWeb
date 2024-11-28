@@ -3,7 +3,7 @@ import React from "react";
 export default function About() {
   return (
     <div className="section">
-      <h1 className="col"> col2</h1>
+      <h1 className="col"> TeamPicture</h1>
       <div className="col">
         <h1 className="title">Our Mission</h1>
         <p className="info">

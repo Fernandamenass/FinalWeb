@@ -17,6 +17,10 @@ body {
   font-family: "Prompt", sans-serif;
 }
 
+.container {
+  padding-inline: 10vw;
+}
+
 a {
   text-decoration: none;
 }
@@ -39,16 +43,23 @@ a {
   transition: color var(--animation-speed), filter var(--animation-speed);
 }
 
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.user-actions {
+  display: flex;
+  gap: 20px;
+}
+
 .navbar a {
-  padding: 2em;
+  padding: 0.5em 1em;
   margin-left: 1em;
   color: whitesmoke;
   letter-spacing: 1px;
   font-weight: bolder;
-}
-
-.container {
-  padding-inline: 10vw;
+  font-size: 16px;
 }
 
 .navbar a:hover {
@@ -60,6 +71,21 @@ a {
 .navbar a:active {
   color: #ebdfbf;
   font-weight: bolder;
+}
+
+button1 {
+  padding: 0.5em 1em;
+  background-color: #b78c64;
+  color: whitesmoke;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button1:hover {
+  background-color: #d6c1a1;
+  filter: drop-shadow(2px 2px 5px rgba(255, 255, 255, 0.5));
 }
 
 .main {
@@ -147,9 +173,9 @@ button:hover {
 
 .card-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual tamaño */
-  gap: 20px; /* Espacio entre las tarjetas */
-  justify-items: center; /* Centra las tarjetas en cada columna */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
   margin-top: 20px;
 }
 
@@ -339,7 +365,7 @@ button:hover {
 }
 
 .recipe-detail img {
-  width: 100%; /* Imagen será responsiva */
+  width: 100%;
   height: auto;
   border-radius: 8px;
   margin-bottom: 15px;
@@ -384,4 +410,185 @@ button:hover {
   .recipe-detail h2 {
     font-size: 1.5rem;
   }
+}
+
+.filter-buttons-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 20px;
+  margin: 20px auto;
+  max-width: 90%;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.filter-button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #b78c64;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  flex: 1;
+  margin: 0 5px;
+}
+
+.filter-button.active {
+  background-color: #9d4929;
+  font-weight: bold;
+}
+
+.filter-button:hover {
+  background-color: #9d4929;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #ebdfbf;
+}
+
+.login-card {
+  background: #b78c64;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.login-card h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #9d4929;
+}
+
+.login-input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.login-button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #9d4929;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-button:hover {
+  background-color: #ebdfbf;
+  color: #9d4929;
+}
+
+.logout-button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #9d4929;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.logout-button:hover {
+  background-color: #ebdfbf;
+  color: #9d4929;
+}
+
+.user-actions {
+  display: flex;
+  gap: 20px;
+}
+
+.settings-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2em;
+}
+
+.settings-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.settings-form input {
+  padding: 0.5em;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.settings-form button {
+  padding: 0.5em 1em;
+  background-color: #b78c64;
+  color: whitesmoke;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.settings-form button:hover {
+  background-color: #d6c1a1;
+}
+
+.delete-button {
+  background-color: red;
+  margin-top: 1em;
+}
+
+.delete-button:hover {
+  background-color: #ff6b6b;
+}
+
+.register-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2em;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.register-form input {
+  padding: 0.5em;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.register-form button {
+  padding: 0.5em 1em;
+  background-color: #b78c64;
+  color: whitesmoke;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.register-form button:hover {
+  background-color: #d6c1a1;
 }
