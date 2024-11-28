@@ -27,6 +27,13 @@ export default function NavBar() {
             </Link>
           )}
         </div>
+        <div>
+          {user && (
+            <Link to="/LikedRecipes" className="nav-link">
+              Liked Recipes
+            </Link>
+          )}
+        </div>
 
         {user ? (
           <div className="user-actions">

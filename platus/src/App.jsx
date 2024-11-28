@@ -7,6 +7,7 @@ import Recipes from "./pages/Recipes";
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
 import Settings from "./pages/Settings";
+import LikedRecipes from "./pages/LikedRecipes";
 
 import React from "react";
 
@@ -15,13 +16,14 @@ function App() {
     <Router>
       <Logo />
       <NavBar />
-      <div className="espacio">
+      <div className="espacio container">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Recipes" element={<Recipes />} />
           <Route path="/Settings" element={<Settings />} />
           <Route path="/LoginPage" element={<LoginPage />} />
           <Route path="/RegisterPage" element={<RegisterPage />} />{" "}
+          <Route path="/LikedRecipes" element={<LikedRecipes />} />
         </Routes>
       </div>
       <Footer />
