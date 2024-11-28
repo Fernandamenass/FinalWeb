@@ -1,59 +1,66 @@
 import React, { useState } from "react";
 import { useAuth } from "../AuthContext";
 import { useNavigate } from "react-router-dom";
+import "../styles/index.css";
 
-export default function RegisterPage() {
-  const { registerUser } = useAuth();
+const LoginPage = () => {
+  const { user, login, logout } = useAuth();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const [error, setError] = useState("");
+  const [error, setError] = useState(null);
   const navigate = useNavigate();
 
-  const handleRegister = (e) => {
+  const handleLogin = (e) => {
     e.preventDefault();
-
-    if (!username || !password) {
-      setError("Please enter both username and password.");
-      return;
-    }
-
-    const success = registerUser(username, password);
+    const success = login(username, password);
     if (success) {
-      navigate("/login");
+      navigate("/recipes");
     } else {
-      setError("Username already exists!");
+      setError("Invalid username or password");
     }
+  };
+
+  const handleLogout = () => {
+    logout();
+    navigate("/");
   };
 
   return (
     <div className="login-container">
       <div className="login-card">
-        <h1>Create a New Account</h1>
-        <form onSubmit={handleRegister}>
+        <h1>{user ? "Logout" : "Login"}</h1>{" "}
+        {user ? (
           <div>
+            <p>Welcome, {user.username}!</p>{" "}
+            <button className="logout-button" onClick={handleLogout}>
+              Logout
+            </button>
+          </div>
+        ) : (
+          <form onSubmit={handleLogin}>
+            {error && <p className="error">{error}</p>}{" "}
             <input
               type="text"
+              placeholder="Username"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
-              placeholder="Enter your username"
               className="login-input"
             />
-          </div>
-          <div>
             <input
               type="password"
-              placeholder="Enter your password"
+              placeholder="Password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               className="login-input"
             />
-          </div>
-          <button type="submit" className="login-button">
-            Register
-          </button>
-        </form>
-        {error && <p className="error">{error}</p>}
+            <button type="submit" className="login-button">
+              Login
+            </button>
+          </form>
+        )}
       </div>
     </div>
   );
-}
+};
+
+export default LoginPage;

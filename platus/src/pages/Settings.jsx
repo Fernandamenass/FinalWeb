@@ -28,34 +28,36 @@ export default function Settings() {
   };
 
   return (
-    <div className="settings-container">
-      <h1>Settings</h1>
-      <form onSubmit={handleUpdate} className="settings-form">
-        <div>
-          <label>Change Username:</label>
-          <input
-            type="text"
-            value={newUsername}
-            onChange={(e) => setNewUsername(e.target.value)}
-            placeholder="New Username"
-          />
-        </div>
-        <div>
-          <label>Change Password:</label>
-          <input
-            type="password"
-            value={newPassword}
-            onChange={(e) => setNewPassword(e.target.value)}
-            placeholder="New Password"
-          />
-        </div>
-        <button type="submit" className="button1">
-          Save Changes
+    <div className="login-container">
+      <div className="login-card">
+        <h1>Settings</h1>
+        <form onSubmit={handleUpdate} className="settings-form">
+          <div>
+            <input
+              type="text"
+              value={newUsername}
+              onChange={(e) => setNewUsername(e.target.value)}
+              placeholder="New Username"
+              className="login-input"
+            />
+          </div>
+          <div>
+            <input
+              type="password"
+              value={newPassword}
+              onChange={(e) => setNewPassword(e.target.value)}
+              placeholder="New Password"
+              className="login-input"
+            />
+          </div>
+          <button type="submit" className="login-button">
+            Save Changes
+          </button>
+        </form>
+        <button className="login-button" onClick={handleDeleteAccount}>
+          Delete Account
         </button>
-      </form>
-      <button className="button1 delete-button" onClick={handleDeleteAccount}>
-        Delete Account
-      </button>
+      </div>
     </div>
   );
 }
