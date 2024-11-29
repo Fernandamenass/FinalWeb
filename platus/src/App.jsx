@@ -8,6 +8,9 @@ import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
 import Settings from "./pages/Settings";
 import LikedRecipes from "./pages/LikedRecipes";
+import Blog from "./pages/Blog";
+import CreatePost from "./pages/CreatePost";
+import PostDetail from "./pages/PostDetail";
 
 import React from "react";
 
@@ -24,6 +27,9 @@ function App() {
           <Route path="/LoginPage" element={<LoginPage />} />
           <Route path="/RegisterPage" element={<RegisterPage />} />{" "}
           <Route path="/LikedRecipes" element={<LikedRecipes />} />
+          <Route path="/Blog" element={<Blog />} />
+          <Route path="/CreatePost" element={<CreatePost />} />
+          <Route path="/PostDetail" element={<PostDetail />} />
         </Routes>
       </div>
       <Footer />

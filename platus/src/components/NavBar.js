@@ -34,6 +34,13 @@ export default function NavBar() {
             </Link>
           )}
         </div>
+        <div>
+          {user && (
+            <Link to="/Blog" className="nav-link">
+              Blog
+            </Link>
+          )}
+        </div>
 
         {user ? (
           <div className="user-actions">
