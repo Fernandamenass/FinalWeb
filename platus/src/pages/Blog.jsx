@@ -54,32 +54,36 @@ export default function Blog() {
   };
 
   return (
-    <div>
-      <h1>Recipe Blog</h1>
-      {user && (
-        <Link to="/CreatePost" className="button">
-          Create New Post
-        </Link>
-      )}
-      <div className="posts-container">
-        {posts.map((post) => (
-          <div key={post.id} className="post-card">
-            <h2>{post.title}</h2>
-            <p>{post.content.slice(0, 100)}...</p>
-            <p>Likes: {post.likes.length}</p>
-            <button onClick={() => handleLike(post.id)}>
-              {post.likes.includes(user?.username) ? "Unlike" : "Like"}
-            </button>
-            <button
-              onClick={() => navigate("/PostDetail", { state: { post } })}
-            >
-              Read More
-            </button>
-            {user?.username === post.author && (
-              <button onClick={() => handleDeletePost(post.id)}>Delete</button>
-            )}
-          </div>
-        ))}
+    <div className="login-container">
+      <div className="x-card">
+        <h1 className="titles">Recipe Blog</h1>
+        {user && (
+          <Link to="/CreatePost" className="x-button">
+            Create New Post
+          </Link>
+        )}
+        <div className="posts-container">
+          {posts.map((post) => (
+            <div key={post.id} className="post-card">
+              <h2>{post.title}</h2>
+              <p>{post.content.slice(0, 100)}...</p>
+              <p>Likes: {post.likes.length}</p>
+              <button onClick={() => handleLike(post.id)}>
+                {post.likes.includes(user?.username) ? "Unlike" : "Like"}
+              </button>
+              <button
+                onClick={() => navigate("/PostDetail", { state: { post } })}
+              >
+                Read More
+              </button>
+              {user?.username === post.author && (
+                <button onClick={() => handleDeletePost(post.id)}>
+                  Delete
+                </button>
+              )}
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
