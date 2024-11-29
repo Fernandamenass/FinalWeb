@@ -140,13 +140,13 @@ button1:hover {
 }
 
 button {
-  margin-top: 10px;
   padding: 8px 16px;
   background-color: #b78c64;
   color: white;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  margin: 1em;
 }
 
 button:hover {
@@ -520,37 +520,10 @@ button:hover {
   gap: 20px;
 }
 
-.settings-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 2em;
-}
-
 .settings-form {
   display: flex;
   flex-direction: column;
   gap: 1em;
-}
-
-.settings-form input {
-  padding: 0.5em;
-  width: 200px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-.settings-form button {
-  padding: 0.5em 1em;
-  background-color: #b78c64;
-  color: whitesmoke;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.settings-form button:hover {
-  background-color: #d6c1a1;
 }
 
 .delete-button {
@@ -560,39 +533,6 @@ button:hover {
 
 .delete-button:hover {
   background-color: #ff6b6b;
-}
-
-.register-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 2em;
-}
-
-.register-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-}
-
-.register-form input {
-  padding: 0.5em;
-  width: 200px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-.register-form button {
-  padding: 0.5em 1em;
-  background-color: #b78c64;
-  color: whitesmoke;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.register-form button:hover {
-  background-color: #d6c1a1;
 }
 
 .x-card {
@@ -620,4 +560,11 @@ button:hover {
 .x-button:hover {
   background-color: #ebdfbf;
   color: #9d4929;
+}
+
+.blanco {
+  background-color: #fff;
+  padding: 10%;
+  margin: 2em;
+  border-radius: 4px;
 }

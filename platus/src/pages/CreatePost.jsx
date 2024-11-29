@@ -26,19 +26,23 @@ export default function CreatePost() {
 
   return (
     <div className="login-container">
-      <h1 className="titles">Create a New Post</h1>
-      <input
-        type="text"
-        placeholder="Title"
-        value={title}
-        onChange={(e) => setTitle(e.target.value)}
-      />
-      <textarea
-        placeholder="Content"
-        value={content}
-        onChange={(e) => setContent(e.target.value)}
-      />
-      <button onClick={handleCreatePost}>Submit</button>
+      <div className="x-card">
+        <h1 className="titles">Create a New Post</h1>
+        <input
+          type="text"
+          placeholder="Title"
+          value={title}
+          onChange={(e) => setTitle(e.target.value)}
+          className="login-input"
+        />
+        <textarea
+          placeholder="Content"
+          value={content}
+          onChange={(e) => setContent(e.target.value)}
+          className="login-input"
+        />
+        <button onClick={handleCreatePost}>Submit</button>
+      </div>
     </div>
   );
 }
