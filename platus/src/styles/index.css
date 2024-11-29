@@ -134,7 +134,6 @@ button1:hover {
 
 .recipe-image img {
   width: 30vw;
-  width: 100%;
   border-radius: 8px;
   object-fit: cover;
   animation: Bounce 4s ease forwards infinite;
