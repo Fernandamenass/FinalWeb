@@ -53,7 +53,7 @@ export default function Blog() {
   return (
     <div className="login-container">
       <div className="x-card">
-        <div className="recipes-container">
+        <div className="posts-container">
           <h1 className="titles">Recipe Blog</h1>
           {user && (
             <Link to="/CreatePost" className="x-button">
