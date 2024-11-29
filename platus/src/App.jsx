@@ -11,6 +11,7 @@ import LikedRecipes from "./pages/LikedRecipes";
 import Blog from "./pages/Blog";
 import CreatePost from "./pages/CreatePost";
 import PostDetail from "./pages/PostDetail";
+import Admin from "./pages/Admin";
 
 import React from "react";
 
@@ -30,6 +31,7 @@ function App() {
           <Route path="/Blog" element={<Blog />} />
           <Route path="/CreatePost" element={<CreatePost />} />
           <Route path="/PostDetail" element={<PostDetail />} />
+          <Route path="/Admin" element={<Admin />} />
         </Routes>
       </div>
       <Footer />
