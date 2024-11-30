@@ -1,0 +1,81 @@
+
+
+Desarrollo de Aplicaciones Web
+Professor Gabriel Castillo Cortés
+
+Team #8 - “Platus”
+
+Francisco Díaz De León Borunda
+Fernanda Mena Santos
+Álvaro Reynoso Obregón 
+
+
+
+DESIGN DOCUMENT 
+
+Wireframe Sketches
+Homepage
+Contains an introduction and a navigation menu leading to different sections like Recipes, Settings, Login, and Register.
+Recipes Page
+Displays recipes as interactive cards, each with an image, title, and a "Like" button. There is also the option to select a recipe card and the whole information will be displayed. At the top of the page, just after the navbar there is a filter where the user can decide the type of recipe they want t o cook.
+Liked Recipes Page
+This area allows users to visualise the recipes they have marked as favourites. Each time the user Likes a recipe, they appear on this page where users can consult their favourite recipes in a quick way.
+Blog Page
+In the Blog page, users can view posts related to the recipes. Each post should show a title, the content and likes (the number of them as well as the like button). The users can as well publish their own notes and create a healthy community. 
+Settings Page
+The user here has the ability to delete their own account.
+Login/Register Pages
+Simple forms for user authentication, styled with responsive layouts.
+CHALLENGES
+
+
+
+State Management
+Challenge: Managing authentication state across components.
+Solution: Implemented React Context API to create a global AuthContext.
+Responsiveness
+Challenge: Adapting the UI for different screen sizes.
+Solution: Used CSS media queries and peer-tested layouts on multiple devices.
+Time Constraints
+Challenge: Balancing academic workload with project development.
+Solution: Divided tasks among team members and set weekly milestones.
+
+
+
+
+
+
+
+Proposed solutions
+
+Using Local Storage for Authentication
+While a server-side backend would have been more secure, local storage was chosen to simplify the scope for a beginner-level project.
+Custom CSS Styling
+Although frameworks like Bootstrap could expedite design, the team opted for custom CSS to gain experience with raw styling techniques.
+React Router for Navigation
+React Router DOM allowed seamless navigation without page reloads, creating a better user experience.
+
+
+Team reflection
+The project was an excellent opportunity to implement concepts learned during the course. It allowed us to explore React, build reusable components, and understand state management. The challenges we faced helped us develop problem-solving skills and teamwork.
+Real-World Applications
+Platus could be extended into a full-fledged recipe-sharing platform.
+Integration with a backend API and user data encryption could make the app production-ready.
+The learnings from this project are transferable to developing similar user-centric web applications.
+
+
+
+Personal Reflections
+
+1.- Fernanda Mena: I believe this project was interesting, with our basic knowledge we were able to create a website that I am proud of. At first it was a little bit complicated because I found React kind of difficult, but after studying our class work and some youtube tutorials we achieved a wonderful result. ¡I enjoyed working on it!
+
+
+2.- Álvaro Reynoso: Even though I don't think I would like to work on it, I would love to be involved in website design. More over things like the css and the actual visual development of a website or even a brand.
+
+3.- Francisco Diaz de Leon Borunda: I think that we can use this project for our portfolio in the future, with this i have more experience in the area of web development so i can search a future work that can help me grow in my professional life.
+
+
+Conclusion
+
+
+The project exceeded our initial expectations in terms of functionality and design. While we faced challenges, each obstacle improved our technical and teamwork skills. The decision to prioritize learning over complexity (e.g., choosing local storage over a backend) aligned with our academic goals. Overall, this project lays a strong foundation for more advanced web development work in the future.
