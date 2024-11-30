@@ -10,7 +10,7 @@ export default function Logo() {
       </div>
       <div class="header-right">
         <div class="graphic-container">
-          <img src={Header} alt="Graphic Image" class="graphic" />
+          <img src={Header} alt="Graphic Element" class="graphic" />
           <h1 class="logoLet">Platus</h1>
           <h2 class="subtitlelogo">Hunger? No longer!</h2>
         </div>
