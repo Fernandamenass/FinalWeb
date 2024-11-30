@@ -1,0 +1,57 @@
+Team Log
+Mar 20 Ago
+Started ideas for the problem to tackle
+
+Mar 21 Ago
+Fer proposed the problem of “world hunger” and we decided to go with it
+
+We also made the proposal for the project
+
+Vie 23 Ago
+Decided on the primitives of the design and the fully executed idea.
+
+Finished the proposal.
+
+Jue 29 Ago
+MY IPAD STOPPED WORKINGGGGG :(
+
+Dom 1 Sep
+Started the first prototype for the site.
+
+6 Sept
+The html and css of the website where finished (https://github.com/Fernandamenass/Prototipo.git)
+
+Sab 26 Oct
+First attempt to make the css, looks pretty!
+
+
+Dom 27 Oct
+The css i made its not responsive :I
+
+29 Oct
+The ejs version of the websites works perfectly (https://github.com/Wayameya/Final-FerAndAlvaro.git)Mi mayor problems on this project where finding the API, making the website responsive, the Mongo was really difficult to make it work, the css was not working correctly on some of the pages and I kind of redesign some aspects of the original prototype. 
+
+Jue 21 Nov
+Presentation!
+
+22 Nov
+I started the document of react and worked on simple things such as the main overview, the navbar and the random recipe.
+
+23 Nov
+I started the document of react and worked on simple things such as the main overview, the navbar and the random recipe.
+
+24 Nov
+The document was updated with information such as the recipes, the famous chefs at the bottom of the home page and the footer that appears in every single page.
+
+25-27 Nov
+The implementation of the login, the register and the logout where implemented. I tried to do the settings part but the account was not deleted correctly.
+The filter of the recipes was implemented correctly, so now we can search for specific types of food.
+
+28 Nov
+¡Final Presentation!
+I made some final implementations such as the likes of the posts, the page where you can find these liked posts, the blog in which the user can either delete their post or like community posts and make the delete account work.
+
+29 Nov
+I made some final adjustments to the webpage, mostly css relating actions. (https://github.com/Fernandamenass/FinalWeb.git)
+I posted the website on render and now everyone can access it. (https://platus-hunger-nolonger.onrender.com)
+The css was a little problem and the page is not responsive
